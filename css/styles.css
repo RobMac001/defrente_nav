@@ -8,7 +8,7 @@
   --text-color: #ffffff;
 
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2rem;
+  --biggest-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: .938rem;
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 968px){
   :root{
-    --biggest-font-size: 3rem;
+    --biggest-font-size: 2.5rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -112,12 +112,78 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.section-bottle, .section-bottle-center{
+  font-size: 2.3rem;
+  color: #2B3B55;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.section-bottle2, .section-bottle2-center{
+  font-size: 1.8rem;
+  color: #2B3B55;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .container-background{
   max-width: 100%;
   width: calc(100% );
   margin-left: 0;
   margin-right: 0;
   background-image: url(../img/BG\ Banner@2x.png);
+  background-size:cover;
+  /*background-size: 1920px 1400px;*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-color: #FFF;*/
+}
+
+.container-background2{
+  max-width: 100%;
+  width: calc(100% );
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(../img/Banner-Diego@2x.png);
+  background-size:cover;
+  /*background-size: 1920px 1400px;*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-color: #FFF;*/
+}
+
+.container-background3{
+  max-width: 100%;
+  width: calc(100% );
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(../img/404.jpg);
+  background-size:cover;
+  /*background-size: 1920px 1400px;*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-color: #FFF;*/
+}
+
+.container-background4{
+  max-width: 100%;
+  width: calc(100% );
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(../img/Defrente\ Frio\ Diego@2x.png);
+  background-size:cover;
+  /*background-size: 1920px 1400px;*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-color: #FFF;*/
+}
+
+.container-background5{
+  max-width: 100%;
+  width: calc(100% );
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(../img/Derecho-Frio@2x.png);
   background-size:cover;
   /*background-size: 1920px 1400px;*/
   background-repeat: no-repeat;
@@ -152,6 +218,20 @@ img{
 
 .bd-container{
   max-width: 1968px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.diego-container{
+  max-width: 1268px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.frio-container{
+  max-width: 1368px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
@@ -426,6 +506,49 @@ img{
 
 
 
+.home__container{
+  row-gap: .5rem;
+}
+
+.home__img{
+  width: 280px;
+  justify-self: center;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-2);
+}
+
+.home__frase{
+  font-size: 2rem;
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-2);
+  text-align: center;
+ /*padding-right: 300px;*/
+}
+
+.home__diego{
+  font-size: 4rem;
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-2);
+}
+
+.home__frio{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: var(--mb-2);
+  color: #2B3B55;
+}
+
+.home__description{
+  margin-bottom: var(--mb-3);
+  
+}
+
+
+
 
 
 
@@ -547,6 +670,31 @@ img{
   transform: scaleY(1.3);
 }
 
+
+
+
+.button-frio {
+  display: inline-block;
+  color: #ffffff;
+  
+}
+
+.button-frio {
+  background-color: #2B3B55;
+  padding: 0.5rem 2.5rem;
+  border: 0px solid var(--title-color);
+  border-radius: 4px;
+  transition: transform 0.2s;
+  justify-self: center;
+}
+
+.button-frio:hover {
+  transform: scaleY(1.1);
+}
+
+button-frio
+
+
 .nav__close {
   position: absolute;
   top: 1rem;
@@ -601,6 +749,8 @@ img{
   }
 
   .section-title-center,
+  .section-bottle-center,
+  .section-bottle2-center,
   .share__data,
   .send__description{
     text-align: initial;
@@ -697,6 +847,16 @@ img{
 
 @media screen and (min-width: 968px){
   .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .diego-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .frio-container{
     margin-left: auto;
     margin-right: auto;
   }
